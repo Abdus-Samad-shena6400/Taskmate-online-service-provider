@@ -1,0 +1,117 @@
+/* Base styles */
+
+.login-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 30%;
+    height: 55vh;
+    padding-top: 38px;
+    border-radius: 30px;
+    background-color: rgba(87, 84, 84, 0.214);
+    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), /* Add a shadow on the bottom-right */
+                -5px -5px 15px rgba(255, 255, 255, 0.3); /* Add a lighter shadow on the top-left */
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-top: 4rem;
+  }
+  
+  .login-h2 {
+    color: maroon;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .login-p {
+    font-size: 1rem; /* Adjust the value as desired */
+    color: maroon;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .login-link {
+    font-size: 0.9rem; /* Adjust the value as desired */
+    color: maroon;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-container input[type="email"],
+  .login-container input[type="password"] {
+    width: 120%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #403b3b;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: 10px;
+  }
+  
+  .login-container input[type="submit"] {
+    width: 120%;
+    padding: 10px;
+    background-color: rgb(178, 36, 36);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .login-container input[type="submit"]:hover {
+    background-color: maroon;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    .login-border {
+      width: 80%;
+      height: auto; /* Allow the height to adjust naturally */
+      padding-top: 20px;
+    }
+  
+    .login-container {
+      width: 100%; /* Full width */
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjustments for smartphones */
+    .login-border {
+      width: 90%; /* Adjust width for very small screens */
+      height: auto; /* Allow the height to adjust naturally */
+      padding-top: 10px;
+      box-shadow: none; /* Remove the shadow */
+      background-color: transparent; /* Remove the background color */
+    }
+  
+    .login-container {
+      width: 100%; /* Full width */
+      padding: 5px;
+    }
+  }
+  
+  /* Additional media query for small heights */
+  @media (max-height: 600px) {
+    .login-border {
+      height: auto; /* Allow the height to adjust naturally based on the content */
+      padding-top: 10px; /* Adjust padding as needed */
+      padding-bottom: 10px;
+    }
+  }
+  
