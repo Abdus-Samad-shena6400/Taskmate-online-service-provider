@@ -149,7 +149,7 @@ const Home = () => {
   const teamMembers = [
     {
       name: "Abdus Samad",
-      image: "/images/team/samad.jpg",
+      image: "/images/team/samad.jpeg",
       description: "Full-stack developer specializing in React and Node.js. I build responsive, accessible user interfaces and scalable backend APIs, and I focus on writing clean, maintainable code. Passionate about mentorship, performance, and delivering user-centered solutions.",
       role: "Full-Stack Developer"
     },
