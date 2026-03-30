@@ -6,7 +6,7 @@ const cors = require('cors');
 
 // ✅ Environment-aware allowed origins
 const allowedOrigins = [
-  "https://taskmate-frontend-tau.vercel.app",
+  "https://taskmate-online-service-provider.vercel.app",
   "http://localhost:5173",
   process.env.FRONTEND_URL, // Add this to your environment variables
 ].filter(Boolean); // Remove undefined values
